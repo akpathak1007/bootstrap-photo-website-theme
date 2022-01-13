@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo website theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./asset/photo_icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TODO: NAVBAR -->
+    <nav class="navbar navbar-light fixed-top bg-light">
+      <div class="container-fluid">
+        <a href="" class="text-danger fw-bolder navbar-brand"
+          ><i class="bi bi-camera text-danger"></i> iShoot</a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          type="button"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#exeprience" class="nav-link">Exeprience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- TODO: HEADER -->
+    <header id="home" class="p-5 text-center text-sm-start min-vh-100">
+      <div class="row p-2">
+        <div
+          class="col-md-6 d-flex flex-column align-items-center align-items-sm-start"
+        >
+          <h5 class="fw-light text-muted p-3 m-0 border-bottom w-100">
+            PHOTOGRAPHER
+          </h5>
+          <h1 class="display-1 fw-bolder">Shooting Your Memories</h1>
+          <p class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
+            iusto! Excepturi illum a ipsa nihil nam veniam sed velit quaerat
+            tenetur iste, expedita obcaecati optio fugit eveniet est quibusdam
+            rerum?
+          </p>
+          <div
+            class="d-flex flex-sm-row flex-column justify-content-center justify-content-md-between w-90 m text-center mb-3"
+          >
+            <div class="me-3">
+              <button class="btn btn-danger btn-lg w-100">
+                <i class="bi bi-envelope me-1"></i>Email Me Here
+              </button>
+            </div>
+            <div
+              class="mt-3 mt-sm-0 fs-2 flex-grow-1 d-flex justify-content-center justify-content-sm-evenly"
+            >
+              <a href="#"><i class="bi bi-facebook text-dark"></i></a>
+              <a href="#"><i class="bi bi-twitter ms-3 text-dark"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 v-center align-items-center text-center">
+          <h1 class="display-1"><i class="bi bi-instagram text-danger"></i></h1>
+          <h6 class="text-muted">Check out my</h6>
+          <h4 class="text-primary">
+            <a href="#" class="text-decoration-none">INSTAGRAM &rightarrow;</a>
+          </h4>
+        </div>
+      </div>
+    </header>
+    <!-- TODO: MAIN -->
+    <main class="">
+      <!-- TODO: MAIN > EXEPRIENCE  -->
+      <section
+        id="exeprience"
+        class="container-fluid bg-success p-5 bg-light min-vh-100"
+      >
+        <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+          <!-- TODO: MAIN > EXEPRICNE > HEADER -->
+          <header
+            class="col flex-grow-1 d-flex flex-column align-items-center align-items-lg-start"
+          >
+            <div>
+              <h5 class="fw-light text-muted p-3 m-0 border-bottom w-100">
+                EXEPRIENCE
+              </h5>
+              <h1 class="display-1 fw-bolder">
+                I have been capturing memories for the last 10 years.
+              </h1>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Assumenda minima accusamus, repellendus fugit dolore aliquam
+                quae officiis necessitatibus voluptas tempore nulla, optio fuga
+                nesciunt. Placeat, eos ducimus! Recusandae, soluta explicabo!
+              </p>
+            </div>
+          </header>
+          <!-- TODO: MAIN > EXEPRIENCE > RIGHT SECTION -->
+          <div
+            class="col row row-cols-1 row-cols-sm-2 justify-content-center align-items-center"
+          >
+            <div class="col">
+              <div class="card shadow m-2">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-camera fs-2 text-danger d-block my-1"></i>
+                    Potrait Photos
+                  </h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <button class="btn btn-danger">View Photo</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow m-2">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-camera fs-2 text-danger d-block my-1"></i>
+                    Travel Blog
+                  </h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <button class="btn btn-danger">View Photo</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow m-2">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-camera fs-2 text-danger d-block my-1"></i>
+                    Wedding Shoot
+                  </h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <button class="btn btn-danger">View Photo</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow m-2">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-camera fs-2 text-danger d-block my-1"></i>
+                    Nature Photography
+                  </h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <button class="btn btn-danger">View Photo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TODO: MAIN > PORTFOLIO -->
+      <section id="portfolio" class="p-5 text-white">
+        <!-- TODO: MAIN > PORTFOLIO > HEADER -->
+        <header class="row text-center text-lg-start text-dark">
+          <div
+            class="col d-flex flex-column align-items-center align-items-lg-start"
+          >
+            <div>
+              <h6 class="text-muted p-3 border-bottom font-monospace">
+                PORTFOLIO
+              </h6>
+              <h1 class="display-1 fw-bolder">Take a look at my work.</h1>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate placeat dolorem molestiae. Debitis dignissimos
+                blanditiis obcaecati reiciendis. Placeat corporis modi nemo, at
+                quo esse pariatur tempore aut dolorem, saepe atque!
+              </p>
+            </div>
+          </div>
+        </header>
+        <!-- TODO: MAIN > PORTFOLIO > IMAGE GALLERY -->
+        <div
+          id="portfolio"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center align-items-center"
+        >
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/iX-9qrAjPco" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/y9eL9pm5mAo" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/9477P3t7Esk" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/nzngEQNnkAE" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/QoVEa0-SMKA" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/ayc1G5wV3aA" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/ZeHOV89iirg" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/03YPGHkOc8s" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-2 shadow">
+              <img src="https://source.unsplash.com/zy6GTHwpDzk" alt="" />
+              <div class="card-img-overlay bg-dark">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- TODO FOOTER -->
+    <footer class="bg-dark p-5">
+      <p class="text-center text-muted">
+        &copy; Ak Technologies 2022. All rights reserved
+      </p>
+      <div class="text-center">
+        <i class="me-3 bi bi-instagram fs-4 text-white"></i>
+        <i class="me-3 bi bi-github fs-4 text-white"></i>
+        <i class="me-3 bi bi-facebook fs-4 text-white"></i>
+        <i class="me-3 bi bi-twitter fs-4 text-white"></i>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
