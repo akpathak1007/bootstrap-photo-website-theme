@@ -49,10 +49,11 @@
         </div>
       </div>
     </nav>
-    <!-- TODO: HEADER -->
+    <!-- TODO: MAIN HEADER -->
     <header id="home" class="p-5 text-center text-sm-start min-vh-100">
       <div class="row p-2">
-        <div
+        <!-- TODO: MAIN HEADER > LEFT SECTION -->
+        <section
           class="col-md-6 d-flex flex-column align-items-center align-items-sm-start"
         >
           <h5 class="fw-light text-muted p-3 m-0 border-bottom w-100">
@@ -69,7 +70,11 @@
             class="d-flex flex-sm-row flex-column justify-content-center justify-content-md-between w-90 m text-center mb-3"
           >
             <div class="me-3">
-              <button class="btn btn-danger btn-lg w-100">
+              <button
+                class="btn btn-danger btn-lg w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#contactForm"
+              >
                 <i class="bi bi-envelope me-1"></i>Email Me Here
               </button>
             </div>
@@ -80,14 +85,15 @@
               <a href="#"><i class="bi bi-twitter ms-3 text-dark"></i></a>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 v-center align-items-center text-center">
+        </section>
+        <!-- TODO: MAIN HEADER > RIGHT SECTION -->
+        <section class="col-md-6 v-center align-items-center text-center">
           <h1 class="display-1"><i class="bi bi-instagram text-danger"></i></h1>
           <h6 class="text-muted">Check out my</h6>
           <h4 class="text-primary">
             <a href="#" class="text-decoration-none">INSTAGRAM &rightarrow;</a>
           </h4>
-        </div>
+        </section>
       </div>
     </header>
     <!-- TODO: MAIN -->
@@ -132,7 +138,13 @@
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <button class="btn btn-danger">View Photo</button>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#potrait_photo_carousel_modal"
+                  >
+                    View Photo
+                  </button>
                 </div>
               </div>
             </div>
@@ -147,7 +159,13 @@
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <button class="btn btn-danger">View Photo</button>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#travel_blog_carousel_modal"
+                  >
+                    View Photo
+                  </button>
                 </div>
               </div>
             </div>
@@ -162,7 +180,13 @@
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <button class="btn btn-danger">View Photo</button>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#wedding_shoot_carousel_modal"
+                  >
+                    View Photo
+                  </button>
                 </div>
               </div>
             </div>
@@ -177,7 +201,13 @@
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <button class="btn btn-danger">View Photo</button>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#nature_photography_carousel_modal"
+                  >
+                    View Photo
+                  </button>
                 </div>
               </div>
             </div>
@@ -306,6 +336,500 @@
         <i class="me-3 bi bi-twitter fs-4 text-white"></i>
       </div>
     </footer>
+
+    <!-- TODO: HIDDEN CONTENTS  -->
+    <!-- TODO: MAIN HEADER > EMAIL ME HERE CONTACT FORM -->
+    <section id="contactForm" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Book a shoot</h6>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="row g-3">
+              <div class="col-6">
+                <label for="firstname" class="form-label">First Name</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  placeholder="Joe"
+                />
+              </div>
+              <div class="col-6">
+                <label for="lasttname" class="form-label">Last Name</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  placeholder="Doe"
+                />
+              </div>
+              <div class="col-12">
+                <label for="address1" class="form-label">address1</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="address1"
+                  placeholder="address1"
+                />
+              </div>
+              <div class="col-12">
+                <label for="address2" class="form-label">address2</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="address2"
+                  placeholder="address2"
+                />
+              </div>
+              <div class="col-6">
+                <label for="city" class="form-label">City</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  placeholder="Your city"
+                />
+              </div>
+              <div class="col-4">
+                <label for="state" class="form-label">State</label>
+                <select name="" id="state" class="form-select">
+                  <option value="">choose</option>
+                  <option value="">item2</option>
+                  <option value="">item3</option>
+                  <option value="">item4</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <label for="zipcode" class="form-label">Zip code</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="zipcode"
+                  placeholder="zipcode"
+                />
+              </div>
+              <div class="col-12">
+                <a href="#">Terms of service</a>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="terms"
+                  /><label for="terms" class="form-check-text">I agree</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary w-100">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TODO: EXEPRIENCE > RIGHT SECTION >  CARD SECTION > POTRAIL PHOTO CAROUSEL  -->
+    <article class="modal" id="potrait_photo_carousel_modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title">Potrait Photo</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </header>
+          <div class="modal-body">
+            <div id="potrait_photo_carousel" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-target="#potrait_photo_carousel"
+                  data-bs-slide-to="0"
+                ></button
+                ><button
+                  type="button"
+                  data-bs-target="#potrait_photo_carousel"
+                  data-bs-slide-to="1"
+                ></button
+                ><button
+                  type="button"
+                  data-bs-target="#potrait_photo_carousel"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="https://source.unsplash.com/weekly?portait/"
+                    alt=""
+                  />
+                  <div class="carousel-caption">
+                    <h5>this is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime, esse!
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="https://source.unsplash.com/weekly?portait/red"
+                    alt=""
+                  />
+                  <div class="carousel-caption">
+                    <h5>this is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nemo, quo.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="https://source.unsplash.com/weekly?portait/blue"
+                    alt=""
+                  />
+                  <div class="carousel-caption">
+                    <h5>this is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Adipisci, quisquam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                data-bs-target="#potrait_photo_carousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span
+                ><span class="visually-hidden">Previous</span></button
+              ><button
+                class="carousel-control-next"
+                data-bs-target="#potrait_photo_carousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span
+                ><span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer text-end">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- TODO: EXEPRIENCE > RIGHT SECTION >  CARD SECTION > TRAVEL BLOG CAROUSEL -->
+    <article class="modal" id="travel_blog_carousel_modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title">Travel Blog</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </header>
+          <div class="modal-body">
+            <div id="travel_blog_carousel" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-target="#travel_blog_carousel"
+                  data-bs-slide-to="0"
+                ></button
+                ><button
+                  type="button"
+                  data-bs-target="#travel_blog_carousel"
+                  data-bs-slide-to="1"
+                ></button
+                ><button
+                  type="button"
+                  data-bs-target="#travel_blog_carousel"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://source.unsplash.com/weekly?travel/city"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Eveniet, earum.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://source.unsplash.com/weekly?travel/monument"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum, optio?
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://source.unsplash.com/weekly?travel/nature"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ad, tenetur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#travel_blog_carousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span
+                ><span class="visually-hidden">Previous</span></button
+              ><button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#travel_blog_carousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span
+                ><span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer text-end">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- TODO: EXEPRIENCE > RIGHT SECTION >  CARD SECTION > WEDDING SHOOTS  -->
+    <artical id="wedding_shoot_carousel_modal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title">Wedding Shoot</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </header>
+          <div class="modal-body">
+            <div
+              id="wedding_shoot_carousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-slide-to="0"
+                  data-bs-target="#wedding_shoot_carousel"
+                  class="active"
+                ></button
+                ><button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#wedding_shoot_carousel"
+                ></button
+                ><button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#wedding_shoot_carousel"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="https://source.unsplash.com/weekly?wedding/bride"
+                    alt=""
+                  />
+                  <div class="carousel-caption d-none d-md-block text-dark">
+                    <h5 class="text-shadow">This is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate, magnam.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="https://source.unsplash.com/weekly?wedding/dress"
+                    alt=""
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block text-dark text-shadow"
+                  >
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, quos.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="https://source.unsplash.com/weekly?wedding/kiss"
+                    alt=""
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Suscipit, rerum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#wedding_shoot_carousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span
+                ><span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#wedding_shoot_carousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span
+                ><span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer text-end">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </artical>
+    <!-- TODO: EXEPRIENCE > RIGHT SECTION > CARD SECTION > NATURE PHOTOGRAPHY -->
+    <article id="nature_photography_carousel_modal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title">Nature Photography</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </header>
+          <div class="modal-body">
+            <div id="nature_photography_carousel" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  class="active bg-dark"
+                  data-bs-target="#nature_photography_carousel"
+                  data-bs-slide-to="0"
+                ></button
+                ><button
+                  type="button"
+                  class="bg-dark"
+                  data-bs-target="#nature_photography_carousel"
+                  data-bs-slide-to="1"
+                ></button
+                ><button
+                  type="button"
+                  class="bg-dark"
+                  data-bs-target="#nature_photography_carousel"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://source.unsplash.com/weekly?nature/lake"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Hic, repudiandae?
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://source.unsplash.com/weekly?nature/dessert"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sint, quam.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://source.unsplash.com/weekly?nature/sunrise"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                  <div class="carousel-caption">
+                    <h5>This is title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Incidunt, ab.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#nature_photography_carousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon bg-dark"></span></button
+              ><button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#nature_photography_carousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon bg-dark"></span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer text-end">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
