@@ -49,10 +49,11 @@
         </div>
       </div>
     </nav>
-    <!-- TODO: HEADER -->
+    <!-- TODO: MAIN HEADER -->
     <header id="home" class="p-5 text-center text-sm-start min-vh-100">
       <div class="row p-2">
-        <div
+        <!-- TODO: MAIN HEADER > LEFT SECTION -->
+        <section
           class="col-md-6 d-flex flex-column align-items-center align-items-sm-start"
         >
           <h5 class="fw-light text-muted p-3 m-0 border-bottom w-100">
@@ -69,7 +70,11 @@
             class="d-flex flex-sm-row flex-column justify-content-center justify-content-md-between w-90 m text-center mb-3"
           >
             <div class="me-3">
-              <button class="btn btn-danger btn-lg w-100">
+              <button
+                class="btn btn-danger btn-lg w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#contactForm"
+              >
                 <i class="bi bi-envelope me-1"></i>Email Me Here
               </button>
             </div>
@@ -80,14 +85,15 @@
               <a href="#"><i class="bi bi-twitter ms-3 text-dark"></i></a>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 v-center align-items-center text-center">
+        </section>
+        <!-- TODO: MAIN HEADER > RIGHT SECTION -->
+        <section class="col-md-6 v-center align-items-center text-center">
           <h1 class="display-1"><i class="bi bi-instagram text-danger"></i></h1>
           <h6 class="text-muted">Check out my</h6>
           <h4 class="text-primary">
             <a href="#" class="text-decoration-none">INSTAGRAM &rightarrow;</a>
           </h4>
-        </div>
+        </section>
       </div>
     </header>
     <!-- TODO: MAIN -->
@@ -306,6 +312,92 @@
         <i class="me-3 bi bi-twitter fs-4 text-white"></i>
       </div>
     </footer>
+
+    <!-- TODO: HIDDEN CONTENTS  -->
+    <!-- TODO: MAIN HEADER > EMAIL ME HERE CONTACT FORM -->
+    <section id="contactForm" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Book a shoot</h6>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="row g-3">
+              <div class="col-6">
+                <label for="firstname" class="form-label">First Name</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  placeholder="Joe"
+                />
+              </div>
+              <div class="col-6">
+                <label for="lasttname" class="form-label">Last Name</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  placeholder="Doe"
+                />
+              </div>
+              <div class="col-12">
+                <label for="address1" class="form-label">address1</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="address1"
+                  placeholder="address1"
+                />
+              </div>
+              <div class="col-12">
+                <label for="address2" class="form-label">address2</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="address2"
+                  placeholder="address2"
+                />
+              </div>
+              <div class="col-6">
+                <label for="city" class="form-label">City</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  placeholder="Your city"
+                />
+              </div>
+              <div class="col-4">
+                <label for="state" class="form-label">State</label>
+                <select name="" id="state" class="form-select">
+                  <option value="">choose</option>
+                  <option value="">item2</option>
+                  <option value="">item3</option>
+                  <option value="">item4</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <label for="zipcode" class="form-label">Zip code</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  id="zipcode"
+                  placeholder="zipcode"
+                />
+              </div>
+              <div class="col-12">
+                <a href="#">Terms of service</a>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="terms"><label for="terms" class="form-check-text">I agree</label></div>
+              </div>
+              <div class="col-12"><button class="btn btn-primary w-100">Send</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
